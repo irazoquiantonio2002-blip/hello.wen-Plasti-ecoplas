@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plasti Ecoplas | Fabricantes de Techados Plásticos en Amecameca, Edo. Méx.</title>
+  <meta name="description" content="Fabricantes directos de charolas, tapas para voladero, techos para gallos de pelea y láminas plastiteja en Amecameca. Alta resistencia, precios de fábrica y descuentos por volumen. Cotiza por WhatsApp.">
+  <meta name="keywords" content="techos plásticos Amecameca, charolas para voladero, tapas para voladero, láminas plastiteja, techos para gallos de pelea, fabricante de techados Estado de México, Plasti Ecoplas">
+  <meta property="og:title" content="Plasti Ecoplas | Techados Plásticos de Alta Resistencia · Amecameca">
+  <meta property="og:description" content="Charolas, tapas para voladero, techos para gallos de pelea y láminas plastiteja. Fabricación propia, precios de fábrica y descuentos por volumen.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0A1216">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOGO — símbolo SVG reutilizable (icono techo + acabado corrugado)
+  ══════════════════════════════════════════════════════ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="pe-wave-grad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#0072B8"/>
+        <stop offset="1" stop-color="#6DBE45"/>
+      </linearGradient>
+      <linearGradient id="pe-bg-grad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#1B2E37"/>
+        <stop offset="1" stop-color="#0E181D"/>
+      </linearGradient>
+      <symbol id="pe-logo-mark" viewBox="0 0 64 64">
+        <rect x="1.5" y="1.5" width="61" height="61" rx="18" fill="url(#pe-bg-grad)" stroke="rgba(244,249,247,.14)" stroke-width="1"/>
+        <path d="M20 27 L32 16 L44 27" fill="none" stroke="#F4F9F7" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13.5 35 Q18 29 22.5 35 T31.5 35 T40.5 35 T49.5 35" fill="none" stroke="url(#pe-wave-grad)" stroke-width="3.6" stroke-linecap="round"/>
+        <path d="M13.5 43.5 Q18 37.5 22.5 43.5 T31.5 43.5 T40.5 43.5 T49.5 43.5" fill="none" stroke="url(#pe-wave-grad)" stroke-width="3.6" stroke-linecap="round" opacity=".5"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <svg viewBox="0 0 64 64"><use href="#pe-logo-mark"></use></svg>
+    </div>
+    <div class="loader-word">Plasti<span>Ecoplas</span></div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando…</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Plasti Ecoplas — inicio">
+          <svg class="nav-logo-icon logo-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#pe-logo-mark"></use></svg>
+          <div class="nav-logo-copy">
+            <span>Plasti</span>
+            <span>Ecoplas</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Nosotros</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://wa.me/525512006895?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20cotizar%20techados%20Plasti%20Ecoplas."
+           target="_blank" rel="noopener noreferrer" class="nav-wa desktop-only">
+          <i class="fa-brands fa-whatsapp"></i>
+          Cotizar por WhatsApp
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav-scrim"></div>
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/525512006895?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20cotizar%20techados%20Plasti%20Ecoplas." target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image -->
+      <div class="hero-bg parallax-bg" data-speed="24" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas partículas -->
+      <canvas id="hero-canvas" class="particles-layer" data-particles data-count="55" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Fabricantes Directos · Amecameca, Edo. Méx.
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Techados plásticos</span></span>
+            <span class="line"><span>de alta resistencia,</span></span>
+            <span class="line"><span class="accent">hechos para durar.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            Charolas, tapas para voladero, techos para gallos de pelea y láminas plastiteja, <strong>fabricadas en Amecameca</strong>. Resistentes al sol y la lluvia, ligeras y con precios de fábrica.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="https://wa.me/525512006895?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20cotizar%20techados%20Plasti%20Ecoplas."
+               target="_blank" rel="noopener noreferrer" class="btn-gold">
+              Cotizar por WhatsApp
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#productos" class="btn-outline">
+              <i class="fa-solid fa-layer-group" style="font-size:15px; color:var(--gray);"></i>
+              Ver Productos
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Fabricación propia
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-tags"></i>
+              Precios de fábrica
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-location-dot"></i>
+              Amecameca, Edo. Méx.
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Por qué elegirnos
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              No vendemos techos de catálogo…
+              <em> fabricamos la solución exacta que tu proyecto necesita.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Somos fabricantes directos en Amecameca. Producimos cada charola, tapa y lámina con plástico de alta resistencia, pensado para aguantar años de sol y lluvia sin perder su forma.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-industry"></i>
+            </div>
+            <h3>Fabricación Directa</h3>
+            <p>Producimos en nuestra propia planta en Amecameca. Sin intermediarios: eso significa precios de fábrica y control total de la calidad en cada pieza.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <h3>Resistencia Comprobada</h3>
+            <p>Plástico de alta resistencia diseñado para soportar sol directo, lluvia y uso constante sin decolorarse ni volverse quebradizo.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-sack-dollar"></i>
+            </div>
+            <h3>Precios por Volumen</h3>
+            <p>Mientras más piezas necesites, menor el precio por unidad. Descuentos reales y transparentes para proyectos grandes o palenques completos.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <h3>Atención Personalizada</h3>
+            <p>Te asesoramos directo por WhatsApp para elegir la medida, cantidad y presentación exacta que necesita tu proyecto.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PRODUCTOS — fotos reales
+    ══════════════════════════════════════════════════ -->
+    <section id="productos" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestros Productos</div>
+            <h2 class="section-title" id="amb-heading">
+              Techados plásticos<br>
+              <span class="gold">para cada necesidad</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Fabricación propia en Amecameca. Elige la solución adecuada para tu proyecto.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">Fabricación propia · Precios de fábrica</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Charolas y Tapas para Voladero -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="img/producto-charola-instalada.jpg"
+              alt="Charola de plástico Plasti Ecoplas instalada en voladero, Amecameca">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(0,114,184,0.15); border-color:rgba(46,155,224,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-layer-group" style="color:#8FD3F4;"></i>
+              </div>
+              <h3>Charolas y Tapas para Voladero</h3>
+              <p>Disponibles desde 75×75 cm hasta 2×1 m. Resistentes, ligeras y fáciles de instalar.</p>
+              <div class="amb-temp">5 medidas disponibles<span class="amb-price">Desde $230</span></div>
+            </div>
+          </div>
+
+          <!-- Techos para Gallos de Pelea -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="img/producto-techos-gallos.jpg"
+              alt="Techos de plástico para gallos de pelea instalados sobre jaulas, Plasti Ecoplas">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(109,190,69,0.15); border-color:rgba(143,221,99,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-warehouse" style="color:#B7EA8F;"></i>
+              </div>
+              <h3>Techos para Gallos de Pelea</h3>
+              <p>Módulos pensados para palenques y criaderos. Aguantan sol y lluvia sin perder su forma.</p>
+              <div class="amb-temp">Precio por volumen<span class="amb-price">Desde $350 c/u</span></div>
+            </div>
+          </div>
+
+          <!-- Lámina Plastiteja -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="img/producto-plastiteja.jpg"
+              alt="Lámina Plastiteja de Plasti Ecoplas, acabado tipo teja tradicional">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-house-chimney" style="color:white;"></i>
+              </div>
+              <h3>Lámina Plastiteja</h3>
+              <p>Apariencia de teja tradicional con la ligereza y durabilidad del plástico. Ideal para cobertizos y patios.</p>
+              <div class="amb-temp">Por metro lineal<span class="amb-price">$130 m/l</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — Cómo funciona
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo funciona</div>
+          <h2 class="section-title" id="proceso-heading">
+            Cotizar es <span class="gold">así de fácil</span>
+          </h2>
+          <p>De tu mensaje por WhatsApp a tu techado instalado, así de simple es trabajar con nosotros.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Cuéntanos tu proyecto</h3>
+            <p>Escríbenos por WhatsApp con la medida, cantidad y tipo de techado que necesitas.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Cotización al instante</h3>
+            <p>Te damos el precio de fábrica según tu volumen, con descuentos reales por cantidad.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Entrega en Amecameca</h3>
+            <p>Recoge tu pedido directo en planta o coordinamos la entrega para tu proyecto.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PRODUCTO DESTACADO — Techos para Gallos de Pelea
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="hero-bg parallax-bg" data-speed="16" style="background-image:url('img/galeria-acabado-taller.jpg'); opacity:.22;" aria-hidden="true"></div>
+      <div class="bg-overlay-brand" aria-hidden="true"></div>
+      <canvas class="particles-layer" data-particles data-count="24" aria-hidden="true" style="position:absolute; inset:0; z-index:1;"></canvas>
+
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Producto Destacado</div>
+            <h2 class="section-title" id="prod-heading">
+              Techos para gallos de pelea<br>
+              <span class="gold">resistencia y precio de fábrica</span>
+            </h2>
+            <p class="producto-lead">
+              El producto que nos distingue: módulos de techado diseñados específicamente para palenques y criaderos, con descuentos reales entre más piezas necesites.
+            </p>
+
+            <ul class="feature-rows" aria-label="Características de los techos para gallos de pelea">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-sun"></i></div>
+                <div>
+                  <h4>Resistencia UV</h4>
+                  <p>Soporta sol directo sin decolorarse ni volverse quebradizo.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-feather-pointed"></i></div>
+                <div>
+                  <h4>Ligero y fácil de instalar</h4>
+                  <p>Menos peso que el techado tradicional, instalación más rápida.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-ruler-combined"></i></div>
+                <div>
+                  <h4>Diseñado para tu palenque</h4>
+                  <p>Hecho específicamente para módulos y jaulas de gallos de pelea.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-sack-dollar"></i></div>
+                <div>
+                  <h4>Precio por volumen</h4>
+                  <p>Entre más piezas compres, menor el costo por unidad.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Precios por volumen">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">$420</span>
+                <span class="spec-name">1 Pieza</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">$370</span>
+                <span class="spec-name">50+ Piezas</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">$350</span>
+                <span class="spec-name">100+ Piezas</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">-17%</span>
+                <span class="spec-name">Ahorro Máx.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="led-panel-body"
+                   role="img" aria-label="Techo para gallos de pelea fabricado por Plasti Ecoplas">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Fabricación en Amecameca
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-bolt" style="color:var(--green-light);"></i>
+                Resistente UV
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Datos de Plasti Ecoplas">
+      <div class="hero-bg parallax-bg" data-speed="14" style="background-image:url('img/galeria-modulos-montana.jpg'); opacity:.16;" aria-hidden="true"></div>
+      <div class="bg-overlay-dark" aria-hidden="true"></div>
+      <canvas class="particles-layer" data-particles data-count="20" aria-hidden="true" style="position:absolute; inset:0; z-index:1;"></canvas>
+
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="4"
+                 aria-label="4 líneas de producto">0</div>
+            <div class="stat-lbl">Líneas de<br>producto</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="5"
+                 aria-label="5 medidas disponibles">0</div>
+            <div class="stat-lbl">Medidas y<br>presentaciones</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="17" data-suffix="%"
+                 aria-label="17 por ciento de ahorro">0</div>
+            <div class="stat-lbl">Ahorro máximo<br>por volumen</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="100" data-suffix="%"
+                 aria-label="100 por ciento fabricación propia">0</div>
+            <div class="stat-lbl">Fabricación<br>propia</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES — Para quién es
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">¿Para quién es?</div>
+          <h2 class="section-title" id="sec-heading">
+            Ideal para <span class="gold">cada tipo de proyecto</span>
+          </h2>
+          <p>Desde un palenque completo hasta una estructura residencial, tenemos el techado adecuado.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <div class="sector-icon" aria-hidden="true"><i class="fa-solid fa-warehouse"></i></div>
+            <h3>Criadores y Palenques</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <div class="sector-icon" aria-hidden="true"><i class="fa-solid fa-helmet-safety"></i></div>
+            <h3>Contratistas y Constructoras</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <div class="sector-icon" aria-hidden="true"><i class="fa-solid fa-house"></i></div>
+            <h3>Propietarios Residenciales</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <div class="sector-icon" aria-hidden="true"><i class="fa-solid fa-industry"></i></div>
+            <h3>Distribuidores y Mayoristas</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         GALERÍA — Trabajos reales
+    ══════════════════════════════════════════════════ -->
+    <section id="galeria" aria-labelledby="gal-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Trabajos Reales</div>
+          <h2 class="section-title" id="gal-heading">
+            Proyectos <span class="gold">entregados</span>
+          </h2>
+          <p>Instalaciones reales de nuestros clientes en Amecameca y alrededores.</p>
+        </div>
+
+        <div class="galeria-grid">
+          <div class="g-item g-big reveal">
+            <img src="img/galeria-modulos-montana.jpg" alt="Módulos techados con Plasti Ecoplas, vista de paisaje en Amecameca" loading="lazy">
+            <div class="g-cap">Módulos techados — instalación en Amecameca</div>
+          </div>
+          <div class="g-item reveal d1">
+            <img src="img/producto-charola-instalada.jpg" alt="Charola Plasti Ecoplas instalada en patio residencial" loading="lazy">
+            <div class="g-cap">Charola instalada en patio residencial</div>
+          </div>
+          <div class="g-item reveal d2">
+            <img src="img/producto-techos-gallos.jpg" alt="Techos para gallos de pelea instalados en campo" loading="lazy">
+            <div class="g-cap">Techos para gallos de pelea — instalación en campo</div>
+          </div>
+          <div class="g-item reveal d3">
+            <img src="img/galeria-plastiteja-detalle.jpg" alt="Detalle de acabado de lámina Plastiteja" loading="lazy">
+            <div class="g-cap">Detalle de acabado — Lámina Plastiteja</div>
+          </div>
+          <div class="g-item reveal">
+            <img src="img/galeria-acabado-taller.jpg" alt="Lámina Plastiteja recién fabricada en taller Plasti Ecoplas" loading="lazy">
+            <div class="g-cap">Producto recién fabricado en planta</div>
+          </div>
+          <div class="g-item reveal d1">
+            <img src="img/galeria-obra-gran-escala.jpg" alt="Estructura techada de gran escala en construcción" loading="lazy">
+            <div class="g-cap">Estructura de gran escala en proceso</div>
+          </div>
+          <div class="g-item reveal d2">
+            <img src="img/producto-plastiteja.jpg" alt="Lámina Plastiteja instalada, vista de estructura" loading="lazy">
+            <div class="g-cap">Lámina Plastiteja instalada</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="hero-bg parallax-bg" data-speed="14" style="background-image:url('img/galeria-obra-gran-escala.jpg'); opacity:.14;" aria-hidden="true"></div>
+      <div class="bg-overlay-dark" aria-hidden="true"></div>
+      <canvas class="particles-layer" data-particles data-count="22" aria-hidden="true" style="position:absolute; inset:0; z-index:1;"></canvas>
+
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Hablemos de <span class="gold">tu proyecto</span>
+          </h2>
+          <p>Solicita tu cotización directa de fábrica. Te respondemos por WhatsApp.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Directa de Fábrica</h3>
+            <p class="ci-sub">Fabricantes de techados plásticos en Amecameca, Estado de México.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Ubicación</h4>
+                  <p>Amecameca, Estado de México.<br>Fabricantes directos.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p>
+                    <a href="tel:+525512006895">55 1200 6895</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y cotizamos en minutos.</p>
+                  <a href="https://wa.me/525512006895?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20cotizar%20techados%20Plasti%20Ecoplas." target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="map-wrap">
+              <iframe
+                src="https://maps.google.com/maps?q=Amecameca%2C%20Estado%20de%20M%C3%A9xico&z=13&output=embed"
+                title="Ubicación de Plasti Ecoplas en Amecameca"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Cotización</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Juan Pérez" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Cotización general</option>
+                    <option>Charolas y Tapas para Voladero</option>
+                    <option>Techos para Gallos de Pelea</option>
+                    <option>Lámina Plastiteja</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle de tu pedido</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Cuéntanos la medida, cantidad de piezas y cualquier detalle relevante…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar a WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">
+            <svg class="footer-logo-icon logo-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#pe-logo-mark"></use></svg>
+            <div class="footer-brand-copy">
+              <span>Plasti</span>
+              <span>Ecoplas</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Fabricantes de techados plásticos de alta resistencia. Calidad, durabilidad y precios de fábrica en Amecameca.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <a href="#why">Nosotros</a>
+          <a href="#productos">Productos</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#galeria">Galería</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Productos</h4>
+          <a href="#productos">Charolas y Tapas para Voladero</a>
+          <a href="#producto">Techos para Gallos de Pelea</a>
+          <a href="#productos">Lámina Plastiteja</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="tel:+525512006895">55 1200 6895</a>
+          <a href="https://wa.me/525512006895" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="#contacto">Amecameca, Edo. Méx.</a>
+        </div>
+      </div>
+
+      <div class="footer-inner">
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Plasti Ecoplas. Todos los derechos reservados. Amecameca, Estado de México.
+        </p>
+        <div class="footer-socials">
+          <a href="tel:+525512006895"
+             class="footer-soc" aria-label="Llamar por teléfono">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="https://wa.me/525512006895" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/525512006895?text=Hola%2C%20visit%C3%A9%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20cotizar%20un%20techado."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
