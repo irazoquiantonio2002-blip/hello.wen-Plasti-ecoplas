@@ -11,6 +11,10 @@
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0A1216">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,33 +29,11 @@
 <body>
 
   <!-- ══════════════════════════════════════════════════════
-       LOGO — símbolo SVG reutilizable (icono techo + acabado corrugado)
-  ══════════════════════════════════════════════════════ -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <defs>
-      <linearGradient id="pe-wave-grad" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0" stop-color="#0072B8"/>
-        <stop offset="1" stop-color="#6DBE45"/>
-      </linearGradient>
-      <linearGradient id="pe-bg-grad" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#1B2E37"/>
-        <stop offset="1" stop-color="#0E181D"/>
-      </linearGradient>
-      <symbol id="pe-logo-mark" viewBox="0 0 64 64">
-        <rect x="1.5" y="1.5" width="61" height="61" rx="18" fill="url(#pe-bg-grad)" stroke="rgba(244,249,247,.14)" stroke-width="1"/>
-        <path d="M20 27 L32 16 L44 27" fill="none" stroke="#F4F9F7" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M13.5 35 Q18 29 22.5 35 T31.5 35 T40.5 35 T49.5 35" fill="none" stroke="url(#pe-wave-grad)" stroke-width="3.6" stroke-linecap="round"/>
-        <path d="M13.5 43.5 Q18 37.5 22.5 43.5 T31.5 43.5 T40.5 43.5 T49.5 43.5" fill="none" stroke="url(#pe-wave-grad)" stroke-width="3.6" stroke-linecap="round" opacity=".5"/>
-      </symbol>
-    </defs>
-  </svg>
-
-  <!-- ══════════════════════════════════════════════════════
        LOADER
   ══════════════════════════════════════════════════════ -->
   <div id="loader" aria-hidden="true">
-    <div class="loader-bulb">
-      <svg viewBox="0 0 64 64"><use href="#pe-logo-mark"></use></svg>
+    <div class="loader-bulb logo-badge">
+      <img src="logo.png" alt="">
     </div>
     <div class="loader-word">Plasti<span>Ecoplas</span></div>
     <div class="loader-bar"><div class="loader-bar-fill"></div></div>
@@ -66,7 +48,9 @@
       <div class="nav-inner">
 
         <a href="#hero" class="nav-logo" aria-label="Plasti Ecoplas — inicio">
-          <svg class="nav-logo-icon logo-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#pe-logo-mark"></use></svg>
+          <span class="nav-logo-icon logo-icon logo-badge" aria-hidden="true">
+            <img src="logo.png" alt="">
+          </span>
           <div class="nav-logo-copy">
             <span>Plasti</span>
             <span>Ecoplas</span>
@@ -725,7 +709,9 @@
       <div class="footer-top">
         <div>
           <div class="footer-brand">
-            <svg class="footer-logo-icon logo-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#pe-logo-mark"></use></svg>
+            <span class="footer-logo-icon logo-icon logo-badge" aria-hidden="true">
+              <img src="logo.png" alt="">
+            </span>
             <div class="footer-brand-copy">
               <span>Plasti</span>
               <span>Ecoplas</span>
@@ -752,6 +738,7 @@
         <div class="footer-col">
           <h4>Contacto</h4>
           <a href="tel:+525512006895">55 1200 6895</a>
+          <a href="tel:+525581489539">55 8148 9539</a>
           <a href="https://wa.me/525512006895" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           <a href="#contacto">Amecameca, Edo. Méx.</a>
         </div>
